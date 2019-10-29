@@ -21,7 +21,7 @@ public class Main {
     static void display(VatRate vatRate) {
         for (Rate rates : vatRate.getRates()) {
             for (Period p : rates.getPeriods()){
-                System.out.println(p.getPeriodRates());
+                System.out.println(p.getPeriodRates().get(0).getStandard());
             }
         }
       //  System.out.println(vatRate.getRates().get(4).getPeriods().get(0).getPeriodRates());

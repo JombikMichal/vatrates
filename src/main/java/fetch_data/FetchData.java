@@ -38,7 +38,8 @@ public class FetchData {
 
         String jsonData = fetchData(url);
 
-       // objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+        objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+        objectMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 
         /**
          * here is a JAVA object parsed out of the VatRates API
