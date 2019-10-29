@@ -7,7 +7,7 @@ import java.util.List;
 
 public class VatRate {
 
-    @JsonIgnoreProperties("details")
+    //@JsonIgnoreProperties("details")
     private String details;
 
     private String version;

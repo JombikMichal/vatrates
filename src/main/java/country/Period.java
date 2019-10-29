@@ -9,6 +9,7 @@ public class Period {
     @JsonProperty("effective_from")
     private String effectiveFrom;
 
+    @JsonProperty("rates")
     private List<PeriodRate> periodRates;
 
     public Period() {}

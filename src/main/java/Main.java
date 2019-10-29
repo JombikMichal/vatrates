@@ -1,3 +1,4 @@
+import country.Period;
 import country.Rate;
 import country.VatRate;
 import fetch_data.FetchData;
@@ -19,7 +20,10 @@ public class Main {
 
     static void display(VatRate vatRate) {
         for (Rate rates : vatRate.getRates()) {
-            System.out.println(rates.getCountryCode());
+            for (Period p : rates.getPeriods()){
+                System.out.println(p.getPeriodRates());
+            }
         }
+      //  System.out.println(vatRate.getRates().get(4).getPeriods().get(0).getPeriodRates());
     }
 }

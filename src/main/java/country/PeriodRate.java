@@ -6,8 +6,10 @@ public class PeriodRate {
     @JsonProperty("super_reduced")
     private double superReduced;
 
+    @JsonProperty("reduced")
     private double reduced;
 
+    @JsonProperty("standard")
     private double standard;
 
     public PeriodRate() {
