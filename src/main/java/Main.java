@@ -20,12 +20,10 @@ public class Main {
         objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
         // here is a JAVA object parsed out of the VatRates API
-        VatRate varRate = objectMapper.readValue(jsonData, new TypeReference<VatRate>() {
+        VatRate vatRate = objectMapper.readValue(jsonData, new TypeReference<VatRate>() {
         });
 
-//        System.out.println(varRate.getVersion());
-//        System.out.println(varRate.getDetails());
-//        System.out.println(varRate.getRates().get(6).getCountryCode());
+        display(vatRate);
     }
 
     public static void main(String[] args) {
@@ -62,5 +60,12 @@ public class Main {
             e.printStackTrace();
         }
         return content.toString();
+    }
+
+    public static void display(VatRate vatRate){
+        for (Rate rates : vatRate.getRates()){
+            System.out.println(rates.getCountryCode());
+            
+        }
     }
 }
