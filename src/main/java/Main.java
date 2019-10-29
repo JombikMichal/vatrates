@@ -24,6 +24,5 @@ public class Main {
                 System.out.println(p.getPeriodRates().get(0).getStandard());
             }
         }
-      //  System.out.println(vatRate.getRates().get(4).getPeriods().get(0).getPeriodRates());
     }
 }
