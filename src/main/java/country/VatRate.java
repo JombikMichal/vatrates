@@ -1,17 +1,17 @@
 package country;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import country.Rate;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
 public class VatRate {
 
-    //@JsonIgnoreProperties("details")
+    @JsonProperty("details")
     private String details;
 
+    @JsonProperty("version")
     private String version;
 
+    @JsonProperty("rates")
     private List<Rate> rates;
 
     public String getDetails() {
