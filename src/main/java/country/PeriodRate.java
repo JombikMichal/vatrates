@@ -1,3 +1,5 @@
+package country;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PeriodRate {

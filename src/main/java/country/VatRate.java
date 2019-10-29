@@ -1,5 +1,7 @@
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package country;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import country.Rate;
 
 import java.util.List;
 

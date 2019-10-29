@@ -1,4 +1,7 @@
+package country;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+import country.Period;
 
 import java.util.List;
 
